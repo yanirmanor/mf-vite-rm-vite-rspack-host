@@ -1,0 +1,2 @@
+[workspace]
+children = ["app1", "app2"] 
