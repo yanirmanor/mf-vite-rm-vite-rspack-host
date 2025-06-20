@@ -4,7 +4,8 @@
   "private": true,
   "workspaces": [
     "app1",
-    "app2"
+    "app2",
+    "rspack-app"
   ],
   "scripts": {
     "dev": "bun run --filter app1 dev & bun run --filter app2 dev & bun run --filter rspack-app dev"
