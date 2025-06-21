@@ -4,7 +4,10 @@ import { Rspack } from "@rsbuild/core";
 export const mfConfig = {
   name: "host",
   remotes: {
-    remote: "remote@http://localhost:5173/remoteEntry.js",
+    remote: {
+      external: "remote@http://localhost:5173/remoteEntry.js",
+      type: "module",
+    },
   },
   shared: {
     ...dependencies,
